@@ -4,158 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="icon" href="imgs/icons/hare.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="window">
         <div class="sidebar">
-            <p>Dashboard</p>
-
-            <ul class="main nav">
-                <li class="list-item">Home</li>
-                <li class="list-item">Profile</li>
-                <li class="list-item">Messages</li>
-                <li class="list-item">History</li>
-                <li class="list-item">Tasks</li>
-                <li class="list-item">Communities</li>
-            </ul>
-
-            <ul class="support nav">
-                <li class="list-item">Settings</li>
-                <li class="list-item">Support</li>
-                <li class="list-item">Privacy</li>
-            </ul>
-        </div>
-
-        <div class="header">
-            <div class="top-header">
-                <input type="search" name="search" id="search">
-                <div class="notif-bell">bell.ph</div>
-                <img class="usericon" src="imgs/gig.png" alt="User icon">
-                <p class="name">username</p>
+            <div class="logo img-text-pair">
+                <img class="logo" src="imgs/icons/hare.png" alt="Page Logo">
+                <p class="title">Dashboard</p>
             </div>
-            
-            <div class="bot-header">
+            <div class="ul-container">
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="img-text-pair">
+                            <img src="imgs/icon/home-outline.png" alt="home icon">
+                            <p class="nav"><a href="#">Home</a></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="img-text-pair ">
+                            <img src="imgs/icon/card-account-details.png" alt="profile icon">
+                            <p class="nav"><a href="#">Profile</a></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="img-text-pair ">
+                            <img src="imgs/icon/message-reply-text-outline.png" alt="message icon">
+                            <p class="nav"><a href="#">Messages</a></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="img-text-pair ">
+                         <img src="imgs/icon/history.png" alt="history icon">
+                            <p class="nav"><a href="#">History</a></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="img-text-pair ">
+                            <img src="imgs/icon/clipboard-list-outline.png" alt="task icon">
+                            <p class="nav"><a href="#">Tasks</a></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="img-text-pair ">
+                            <img src="imgs/icon/account-group.png" alt="communities icon">
+                            <p class="nav"><a href="#">Communities</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="ul-container">
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="img-text-pair ">
+                            <img src="imgs/icon/cog.png" alt="settings icon">
+                            <p class="nav"><a href="#">Settings</a></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="img-text-pair ">
+                            <img src="imgs/icon/chat-question-outline.png" alt="support icon">
+                            <p class="nav"><a href="#">Support</a></p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="img-text-pair ">
+                            <img src="imgs/icon/shield-account.png">
+                            <p class="nav"><a href="#">Privacy</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header">
+            <div class="top header-row">
+                <button class="search-btn" type="submit">
+                    <img class="icon" src="imgs/icon/magnify.png" alt="search icon">
+                </button>
+                <input class="search" type="search" name="search" id="search">
+                <img class="icon" src="imgs/icon/bell-ring-outline.png" alt="notif-bell icon">
+                <img src="imgs/icons/default-profile-photo.jpg" alt="profile picture">
+                <p class="username">Username</p>
+            </div>
+            <div class="bot header-row">
+                <img src="imgs/icons/default-profile-photo.jpg" alt="profile picture">
                 <div class="greeting">
-                    <img class="usericon" src="imgs/gig.png" alt="User icon">
                     <p>Hi there,</p>
                     <p>Username (@handle)</p>
                 </div>
-
-                <div class="actions">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                <div class="action-btns">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
                 </div>
             </div>
         </div>
+        <div class="main">
+            <div class="projects main-container">
+                <p class="main-title">Your Projects</p>
+                <div class="projects-container">
+                 
+                    <div class="project-card">
+                        <p class="project-title">Project Title</p>  
+                        <div class="project-desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ultricies ante nec imperdiet. Suspendisse a blandit ex.</div>
+                        <div class="project-btns">
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/star-plus-outline.png" alt="star favourite icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/eye-plus-outline.png" alt="watch icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/source-fork.png" alt="fork icon">
+                            </button>
+                        </div>
+                    </div>
 
-        <div class="main-content">
-            <div class="projects">
-                <p class="content-header">Your Projects</p>
+                    <div class="project-card">
+                        <p class="project-title">Project Title</p>  
+                        <div class="project-desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ultricies ante nec imperdiet. Suspendisse a blandit ex.</div>
+                        <div class="project-btns">
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/star-plus-outline.png" alt="star favourite icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/eye-plus-outline.png" alt="watch icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/source-fork.png" alt="fork icon">
+                            </button>
+                        </div>
+                    </div>
+                   
+                    <div class="project-card">
+                        <p class="project-title">Project Title</p>  
+                        <div class="project-desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ultricies ante nec imperdiet. Suspendisse a blandit ex.</div>
+                        <div class="project-btns">
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/star-plus-outline.png" alt="star favourite icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/eye-plus-outline.png" alt="watch icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/source-fork.png" alt="fork icon">
+                            </button>
+                        </div>
+                    </div>
 
-                <div class="card grid">
-                    <p class="title">title</p>
+                    <div class="project-card">
+                        <p class="project-title">Project Title</p>  
+                        <div class="project-desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ultricies ante nec imperdiet. Suspendisse a blandit ex.</div>
+                        <div class="project-btns">
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/star-plus-outline.png" alt="star favourite icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/eye-plus-outline.png" alt="watch icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/source-fork.png" alt="fork icon">
+                            </button>
+                        </div>
+                    </div>
 
-                    <p class="desc">desc...</p>
+                    <div class="project-card">
+                        <p class="project-title">Project Title</p>  
+                        <div class="project-desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ultricies ante nec imperdiet. Suspendisse a blandit ex.</div>
+                        <div class="project-btns">
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/star-plus-outline.png" alt="star favourite icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/eye-plus-outline.png" alt="watch icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/source-fork.png" alt="fork icon">
+                            </button>
+                        </div>
+                    </div>
 
-                    <div class="links">
-                        <button>icon1</button>
-                        <button>icon2</button>
-                        <button>icon3</button>
+                    <div class="project-card">
+                        <p class="project-title">Project Title</p>  
+                        <div class="project-desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ultricies ante nec imperdiet. Suspendisse a blandit ex.</div>
+                        <div class="project-btns">
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/star-plus-outline.png" alt="star favourite icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/eye-plus-outline.png" alt="watch icon">
+                            </button>
+                            <button  class="project-btn" type="button">
+                                <img src="imgs/icon/source-fork.png" alt="fork icon">
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="announcements main-container">
+                <p class="main-title">Announcements</p>
+                <div class="announcements-container">
+                    <div class="announcement-card">
+                        <p class="announcement-title">Announcement-title</p>
+                        <p class="announcement-desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ultricies ante nec imperdiet. Suspendisse a blandit ex.</p>
+                    </div>
+                    <div class="announcement-card">
+                        <p class="announcement-title">Announcement-title</p>
+                        <p class="announcement-desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ultricies ante nec imperdiet. Suspendisse a blandit ex.</p>
+                    </div>
+                    <div class="announcement-card">
+                        <p class="announcement-title">Announcement-title</p>
+                        <p class="announcement-desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ultricies ante nec imperdiet. Suspendisse a blandit ex.</p>
                     </div>
                 </div>
-
-                <div class="card grid">
-                    <p class="title">title</p>
-
-                    <p class="desc">desc...</p>
-
-                    <div class="links">
-                        <button>icon1</button>
-                        <button>icon2</button>
-                        <button>icon3</button>
+            </div>
+            <div class="trending main-container">
+                <p class="main-title">Trending</p>
+                <div class="trending-container">
+                    <div class="trending-card">
+                        <img class="trending-image" src="imgs/icons/default-profile-photo.jpg" alt="profile image" class="trending-profile">
+                        <p class="handle">@handle</p>
+                        <p class="title desc">project title</p>
                     </div>
-                </div>
 
-                <div class="card grid">
-                    <p class="title">title</p>
-
-                    <p class="desc">desc...</p>
-
-                    <div class="links">
-                        <button>icon1</button>
-                        <button>icon2</button>
-                        <button>icon3</button>
+                    <div class="trending-card">
+                        <img class="trending-image" src="imgs/icons/default-profile-photo.jpg" alt="profile image" class="trending-profile">
+                        <p class="handle">@handle</p>
+                        <p class="title desc">project title</p>
                     </div>
-                </div>
 
-                <div class="card grid">
-                    <p class="title">title</p>
-
-                    <p class="desc">desc...</p>
-
-                    <div class="links">
-                        <button>icon1</button>
-                        <button>icon2</button>
-                        <button>icon3</button>
-                    </div>
-                </div>
-
-                <div class="card grid">
-                    <p class="title">title</p>
-
-                    <p class="desc">desc...</p>
-
-                    <div class="links">
-                        <button>icon1</button>
-                        <button>icon2</button>
-                        <button>icon3</button>
-                    </div>
-                </div>
-
-                <div class="card grid">
-                    <p class="title">title</p>
-
-                    <p class="desc">desc...</p>
-
-                    <div class="links">
-                        <button>icon1</button>
-                        <button>icon2</button>
-                        <button>icon3</button>
+                    <div class="trending-card">
+                        <img class="trending-image" src="imgs/icons/default-profile-photo.jpg" alt="profile image" class="trending-profile">
+                        <p class="handle">@handle</p>
+                        <p class="title desc">project title</p>
                     </div>
                 </div>
             </div>
 
-            <div class="announcements">
-                <p class="content-header">Announcements</p>
-
-                <div class="container">
-                    <div class="card">
-                        <p class="header">Heads</p>
-                        <p class="content">content</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="header">heads</p>
-                        <p class="content">content</p>
-                    </div>
-
-                    <div class="card">
-                        <p class="header">heads</p>
-                        <p class="content">content</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="trending">
-                <p class="content-header">Trending</p>
-
-                <div class="card">
-                    <div class="icon">icon.ph</div>
-                    <p class="handle">handle</p>
-                    <p class="title">project title</p>
-                </div>
+            <div class="empty">
+                <p> </p>
             </div>
         </div>
     </div>
